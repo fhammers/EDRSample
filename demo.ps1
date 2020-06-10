@@ -39,7 +39,7 @@ switch ($bootcount) {
 		
 		$DesktopPath = [Environment]::GetFolderPath("Desktop")
 		$url = "https://github.com/fhammers/EDRSample/raw/master/chrome.lnk"
-		$output = $DesktopPath "\Chrome2.lnk"
+		$output = "C:\Users\sentinel\Desktop\Chrome2.lnk"
 		Invoke-WebRequest -Uri $url -OutFile $output	
         
         exit
